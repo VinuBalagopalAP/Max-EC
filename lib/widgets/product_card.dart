@@ -18,7 +18,7 @@ class ProductCard extends StatelessWidget {
           width: MediaQuery.of(context).size.width / 2.5,
           height: 150,
           child: Image.network(
-            Product.product[0].imageUrl,
+            product.imageUrl,
             fit: BoxFit.cover,
           ),
         ),
@@ -52,14 +52,14 @@ class ProductCard extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          Product.product[0].name,
+                          product.name,
                           style: Theme.of(context)
                               .textTheme
                               .headline5!
                               .copyWith(color: Colors.white),
                         ),
                         Text(
-                          '\$${Product.product[0].price}',
+                          '\$${product.price}',
                           style: Theme.of(context)
                               .textTheme
                               .headline6!

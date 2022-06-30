@@ -35,8 +35,19 @@ class HomePage extends StatelessWidget {
           ),
           const SectionTitle(title: 'RECOMMENDED'),
 
-          /// [ ProductCard ]
-          ProductCard(product: Product.product[0]),
+          /// [ Product Carousel ]
+          ProductCarousel(
+            products: Product.products
+                .where((product) => product.isRecommended)
+                .toList(),
+          ),
+          const SectionTitle(title: 'MOST POPULAR'),
+
+          /// [ Product Carousel ]
+          ProductCarousel(
+            products:
+                Product.products.where((product) => product.isPopular).toList(),
+          ),
         ],
       ),
     );

@@ -27,7 +27,7 @@ class Product extends Equatable {
         isRecommended,
       ];
 
-  static List<Product> product = [
+  static List<Product> products = [
     const Product(
       name: 'Soft Drink#1',
       category: 'Soft Drinks',
