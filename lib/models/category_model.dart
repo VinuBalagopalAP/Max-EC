@@ -14,12 +14,12 @@ class Category extends Equatable {
 
   static List<Category> categories = [
     const Category(
-      name: 'Soft Drink',
+      name: 'Soft Drinks',
       imageUrl:
           'https://images.unsplash.com/photo-1581006852262-e4307cf6283a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHNvZnQlMjBkcmlua3xlbnwwfHwwfHw%3D&w=1000&q=80',
     ),
     const Category(
-      name: 'Soft Drink',
+      name: 'Smoothies',
       imageUrl:
           'https://images.unsplash.com/photo-1600718374662-0483d2b9da44?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHNtb290aGllfGVufDB8fDB8fA%3D%3D&w=1000&q=80',
     ),

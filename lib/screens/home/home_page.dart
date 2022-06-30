@@ -19,17 +19,25 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: const CustomAppBarWidget(title: 'Zero To Unicorn'),
       bottomNavigationBar: const CustomNavBar(),
-      body: CarouselSlider(
-        options: CarouselOptions(
-          autoPlay: true,
-          aspectRatio: 1.5,
-          viewportFraction: 0.9,
-          enlargeCenterPage: true,
-          enlargeStrategy: CenterPageEnlargeStrategy.height,
-        ),
-        items: Category.categories
-            .map((category) => HeroCarouselcard(category: category))
-            .toList(),
+      body: Column(
+        children: [
+          CarouselSlider(
+            options: CarouselOptions(
+              autoPlay: true,
+              aspectRatio: 1.5,
+              viewportFraction: 0.9,
+              enlargeCenterPage: true,
+              enlargeStrategy: CenterPageEnlargeStrategy.height,
+            ),
+            items: Category.categories
+                .map((category) => HeroCarouselcard(category: category))
+                .toList(),
+          ),
+          const SectionTitle(title: 'RECOMMENDED'),
+
+          /// [ ProductCard ]
+          ProductCard(product: Product.product[0]),
+        ],
       ),
     );
   }
