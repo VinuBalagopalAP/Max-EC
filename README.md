@@ -1,4 +1,4 @@
-# max_ec
+# Max_EC
 
 A new Flutter project.
 
