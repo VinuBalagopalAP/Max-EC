@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:max_ec/models/category_model.dart';
 
 import '../screens/screens.dart';
 
@@ -13,7 +14,7 @@ class AppRouter {
         return CartPage.route();
 
       case '/catalog':
-        return CatalogPage.route();
+        return CatalogPage.route(category: settings.arguments as Category);
 
       case '/product':
         return ProductPage.route();
