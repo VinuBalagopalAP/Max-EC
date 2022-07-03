@@ -7,6 +7,9 @@ class CatalogPage extends StatelessWidget {
     super.key,
     required this.category,
   });
+
+  final Category category;
+
   static const String routeName = '/catalog';
 
   static Route route({required Category category}) {
@@ -15,8 +18,6 @@ class CatalogPage extends StatelessWidget {
       builder: (_) => CatalogPage(category: category),
     );
   }
-
-  final Category category;
 
   @override
   Widget build(BuildContext context) {
